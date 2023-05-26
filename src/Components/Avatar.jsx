@@ -1,10 +1,8 @@
-export default function Avatar() {
+export default function Avatar(props) {
+
+    const{url,alt} = props;
+    
     return (
-      <img
-        src="https://picsum.photos/20/30"
-        width={2150}
-        height={150}
-        alt="Avatar"
-      />
+        <img src={url} alt={alt} />
     );
   }
